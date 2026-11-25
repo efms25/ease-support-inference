@@ -7,7 +7,8 @@ export class TriageController {
     request: FastifyRequest<{ Body: { input: string } }>,
     reply: FastifyReply,
   ) {
+    const {input} = request.body;
 
-    return reply.code(200).send('good')
+    return reply.code(200).send(`That is your input: ${input}`);
   }
 }
