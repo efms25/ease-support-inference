@@ -1,0 +1,1 @@
+export type AiProviderName = "opencode-go" | "openAi" | "anthropic" | "google"
